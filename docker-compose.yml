@@ -1,0 +1,10 @@
+version: '2'
+services:
+  app:
+    build: .
+    shm_size: '2048m'
+    ports:
+      - 3000:3000
+      - 35729:35729
+    volumes:
+      - .:/usr/src/app
